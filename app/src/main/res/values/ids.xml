@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ids for the views CategoryHome builds in code (a row's tile: its card, banner, label and name). -->
+<resources>
+    <item name="card" type="id" />
+    <item name="banner" type="id" />
+    <item name="label" type="id" />
+    <item name="name" type="id" />
+</resources>

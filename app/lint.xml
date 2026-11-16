@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Lint for the launcher. CONTRIBUTING.md asks for lintRelease before every push; keep it at zero errors.
+     MissingTranslation stays an error: every string in values/ (English) needs its Italian in values-it/, the only
+     translation. -->
+<lint>
+</lint>

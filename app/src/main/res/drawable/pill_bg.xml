@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Open: the pill's dropdown is showing (MainActivity.dropIn sets it activated). The dropdown has the focus and
+         its own window, so this window is not focused: the pill keeps a brighter glass with a thin white rim
+         instead of the inverted focus fill, and only the dropdown row reads as focused. -->
+    <item android:state_activated="true" android:state_window_focused="false">
+        <shape android:shape="rectangle">
+            <gradient android:angle="270" android:startColor="#4DFFFFFF" android:endColor="#2EFFFFFF" />
+            <stroke android:width="1.5dp" android:color="#D9FFFFFF" />
+            <corners android:radius="21dp" />
+        </shape>
+    </item>
+    <!-- Focused: the tiles' language (FocusLook), the white ring with the dark line inside and a light glow, on a
+         glass a shade brighter than the resting one. The text stays white (pill_text). -->
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <io.github.leopierini.rehome.FocusGlow app:glowCorner="21dp" app:glowSpread="10dp" app:glowColor="@color/focus_glow" />
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient android:angle="270" android:startColor="#38FFFFFF" android:endColor="#1FFFFFFF" />
+                    <stroke android:width="3dp" android:color="@color/focus_ring" />
+                    <corners android:radius="21dp" />
+                </shape>
+            </item>
+            <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <stroke android:width="2dp" android:color="@color/focus_ring_dark" />
+                    <corners android:radius="18dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!-- Reorder button while reorder mode is on (focus is on the tiles then). -->
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#596EC1FF" />
+            <stroke android:width="1.5dp" android:color="#FF6EC1FF" />
+            <corners android:radius="21dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="270" android:startColor="#2EFFFFFF" android:endColor="#14FFFFFF" />
+            <stroke android:width="1dp" android:color="#38FFFFFF" />
+            <corners android:radius="21dp" />
+        </shape>
+    </item>
+</selector>

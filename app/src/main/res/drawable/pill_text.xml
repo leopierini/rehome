@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- A pill whose dropdown is open (pill_bg): white on its glass, not the dark ink of the focus fill. -->
+    <item android:state_activated="true" android:state_window_focused="false" android:color="#FFFFFFFF" />
+    <!-- Focused: white on the focus glass (pill_bg), no longer dark ink on a white fill. -->
+    <item android:state_focused="true" android:color="#FFFFFFFF" />
+    <item android:color="#FFFFFFFF" />
+</selector>

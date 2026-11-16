@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The "Debugging on" pill's text and icon: light red on its red glass, focused or not. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="#FFFFA39C" />
+    <item android:color="#FFFFA39C" />
+</selector>

@@ -1,0 +1,7 @@
+# Optional cleanup for PH1M_EA_9970A sets: apps Philips preloads on this family that some people use.
+# The installer asks before adding this group (or adds it with --with-optional). Same format and the same
+# rules as ph1m_ea_9970a.txt: disabled, never uninstalled; `tools/rehome.py restore` enables them again.
+
+[Optional Philips preloads]
+tv.wuaki.apptv                            # Rakuten TV, preloaded streaming app; disable it only if nobody in the house watches it
+com.ted.android.tv                        # TED talks app, preloaded

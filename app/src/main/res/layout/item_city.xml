@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One place found by the weather city's search (CityPickerActivity): "Name, Region, Country". -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingsRow"
+    android:layout_marginTop="10dp"
+    android:ellipsize="end"
+    android:maxLines="1" />

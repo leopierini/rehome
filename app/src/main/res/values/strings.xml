@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The name in the system's home picker and app list, the same in every language. -->
+    <string name="app_name" translatable="false">rehome</string>
+    <string name="inputs">Inputs</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="settings">Settings</string>
+    <string name="connected">Connected</string>
+    <string name="not_connected">No device</string>
+    <string name="live_tv">Live TV</string>
+    <string name="no_inputs">No inputs found</string>
+    <string name="more_inputs">More inputs</string>
+    <string name="good_morning">Good morning</string>
+    <string name="good_afternoon">Good afternoon</string>
+    <string name="good_evening">Good evening</string>
+    <string name="good_night">Good night</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="not_available">Not available on this TV</string>
+    <string name="cant_open">Can\'t open %1$s</string>
+    <string name="date_format">EEEE  d MMMM</string>
+    <!-- Date next to the clock on Home; a locale can split it over two lines with \n. -->
+    <string name="date_format_home" translatable="false">@string/date_format</string>
+    <string name="stats_cpu">CPU %1$d%%</string>
+    <string name="stats_memory">Memory %1$d / %2$d MB</string>
+    <string name="stats_storage">Storage %1$s free</string>
+    <string name="storage_gb_whole">%1$.0f GB</string>
+    <string name="storage_gb_decimal">%1$.1f GB</string>
+    <string name="dream_name">Clock</string>
+    <string name="vpn">VPN</string>
+    <string name="vpn_off">VPN off</string>
+    <string name="home_settings">Choose default home</string>
+    <string name="home_settings_help">Select your original home to stop using rehome as Home, or rehome to switch back. The original launcher must be enabled and your TV must provide a home picker; use the restore script first if it was disabled.</string>
+    <string name="launcher_settings">Launcher settings</string>
+    <string name="native_settings">Native settings</string>
+    <string name="wallpaper_label">Wallpaper</string>
+    <string name="wallpaper_state">Wallpaper: %1$s</string>
+    <string name="wallpaper_none">None</string>
+    <string name="wallpaper_applied">Wallpaper changed</string>
+    <string name="wallpaper_theme_default">Theme default</string>
+    <string name="animations_state">Animations: %1$s</string>
+    <string name="advanced_effects">Advanced effects</string>
+    <string name="advanced_effects_state">Advanced effects: %1$s</string>
+    <string name="open_on_start_label">Open on start</string>
+    <string name="open_on_start_state">Open on start: %1$s</string>
+    <string name="advanced_effects_warning">Adds a lifted tile, icon zoom and smooth colour transitions. May increase memory use; the actual difference depends on your TV.</string>
+    <string name="follow_theme">Follow theme (reset on-TV choices)</string>
+    <string name="follow_theme_hint">Uses the current theme or built-in layout and motion settings. Pushing or resetting a theme also clears your on-TV choices.</string>
+    <string name="tv_settings">TV system settings</string>
+    <string name="quick_picture">Display</string>
+    <string name="quick_network">Network</string>
+    <string name="quick_apps">Apps</string>
+    <string name="quick_apps_hint">Re-enable</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="enable">Enable</string>
+    <string name="input_key_service_description">Opens the input switcher when the remote\'s Input button is pressed.</string>
+    <string name="home_key_name">Home button</string>
+    <string name="home_key_description">Makes the remote\'s Home button open this launcher.</string>
+    <!-- Settings menu: opens the system power menu (Restart on most TVs). -->
+    <string name="power_menu">Restart…</string>
+    <!-- The greeting, then greeting_name: "Good morning, Mr. Trịnh". -->
+    <string name="greeting_with_name">%1$s, %2$s</string>
+
+    <string name="clock_format_system">System</string>
+    <string name="clock_format_12">12-hour</string>
+    <string name="clock_format_24">24-hour</string>
+    <!-- The weather on Home is Open-Meteo's (CC BY 4.0); credited in Launcher settings, not on Home. -->
+    <string name="weather_credit">Weather: Open-Meteo.com (CC BY 4.0)</string>
+
+    <!-- Top bar -->
+    <!-- The red pill while ADB is on. -->
+    <string name="debug_pill">Debugging on</string>
+    <!-- The Wi-Fi pill with no network at all. -->
+    <string name="network_none">No network</string>
+    <!-- In the weather's place while offline. -->
+    <string name="offline_hint">Offline: check your Wi-Fi or hotspot</string>
+
+    <!-- Wi-Fi dropdown -->
+    <!-- Grey word beside a network. -->
+    <string name="wifi_connected">Connected</string>
+    <string name="wifi_connecting">Connecting…</string>
+    <!-- A saved network: no password needed (shown in place of the lock). -->
+    <string name="wifi_saved">Saved</string>
+    <string name="wifi_searching">Searching for networks…</string>
+    <string name="wifi_off">Wi-Fi is off</string>
+    <string name="wifi_turn_on">Turn on</string>
+    <string name="wifi_turning_on">Turning on Wi-Fi…</string>
+    <string name="wifi_more">More Wi-Fi settings</string>
+    <string name="wifi_no_list">Network list unavailable</string>
+    <string name="wifi_open_settings">Open settings</string>
+    <string name="wifi_cant_connect">Couldn\'t connect to %1$s</string>
+    <string name="wifi_password_refused">%1$s rejected the saved password</string>
+
+    <!-- Data counter (last row of the Wi-Fi dropdown and its detail) -->
+    <!-- A size from a gigabyte: the decimal mark follows the language (2.3 GB, 2,3 GB). -->
+    <string name="data_gb" translatable="false">%1$.1f GB</string>
+    <!-- "Today 2.3 GB". -->
+    <string name="data_today">Today %1$s</string>
+    <string name="data_since_boot">Since last restart %1$s</string>
+    <string name="data_today_label">Today</string>
+    <string name="data_month_label">This month</string>
+    <string name="data_top_apps">Top apps today</string>
+    <string name="data_by_network">By network: today · month (estimate)</string>
+    <string name="data_naming">One moment…</string>
+    <string name="data_system">Android system</string>
+    <string name="data_removed">Uninstalled apps</string>
+    <string name="data_adb">ADB debugging</string>
+    <string name="data_other">Other services</string>
+    <string name="data_unattributed">Unattributed</string>
+    <string name="data_other_networks">Other networks</string>
+
+    <!-- Weather -->
+    <string name="weather_name">Weather</string>
+    <string name="weather_clear">Clear</string>
+    <string name="weather_mostly_clear">Mostly clear</string>
+    <string name="weather_partly_cloudy">Partly cloudy</string>
+    <string name="weather_overcast">Overcast</string>
+    <string name="weather_fog">Fog</string>
+    <string name="weather_drizzle">Drizzle</string>
+    <string name="weather_rain">Rain</string>
+    <string name="weather_showers">Showers</string>
+    <string name="weather_snow">Snow</string>
+    <string name="weather_thunderstorm">Thunderstorm</string>
+    <!-- "Rain from 18:00": %1$s is Rain or Snow, %2$d the hour (2 to 23). -->
+    <string name="rain_from">%1$s from %2$d:00</string>
+    <string name="rain_from_one">%1$s from 1:00</string>
+    <string name="rain_from_midnight">%1$s from midnight</string>
+    <string name="rain_until">%1$s until %2$d:00</string>
+    <string name="rain_until_one">%1$s until 1:00</string>
+    <string name="rain_until_midnight">%1$s until midnight</string>
+    <string name="wind">Wind %1$d km/h</string>
+    <!-- "Wind 14 km/h NE": %2$s is one of wind_points. -->
+    <string name="wind_from">Wind %1$d km/h %2$s</string>
+
+    <!-- Rows -->
+    <!-- Titles of the rows named Media, Music, Games, Tools in category_rows_list, and of the fallback row. -->
+    <string name="row_media">Media</string>
+    <string name="row_music">Music</string>
+    <string name="row_games">Games</string>
+    <string name="row_tools">Tools</string>
+    <string name="row_other">Other apps</string>
+    <!-- The menu of a held OK on an app. -->
+    <string name="tile_move_left">Move left</string>
+    <string name="tile_move_right">Move right</string>
+    <string name="tile_move_row">Move to another row</string>
+    <string name="tile_hide">Hide</string>
+    <string name="tile_info">App info</string>
+    <!-- Launcher settings. -->
+    <string name="rows_reset">Reset row order</string>
+    <string name="rows_reset_message">Rows go back to their original order, and hidden apps reappear.</string>
+    <string name="rows_reset_confirm">Reset</string>
+    <string name="rows_unhide">Show hidden apps</string>
+    <string name="rows_none_hidden">No hidden apps</string>
+    <string name="rows_unhidden">Hidden apps are back on Home</string>
+    <string name="rows_save_failed">Couldn\'t save</string>
+    <!-- Weather city (Launcher settings, CityPickerActivity, and the Home's weather spot without a city). -->
+    <string name="weather_city_label">Weather city</string>
+    <string name="weather_city_state">Weather city: %1$s</string>
+    <string name="weather_city_not_set">Not set</string>
+    <string name="weather_city_off">None (weather off)</string>
+    <string name="weather_city_now">Now: %1$s</string>
+    <string name="weather_set_city">Set your city</string>
+    <string name="city_search_hint">Type a city name</string>
+    <string name="city_searching">Searching…</string>
+    <string name="city_no_results">No results</string>
+    <string name="city_no_connection">No connection</string>
+
+    <!-- Launcher settings: the player's song details from Apple's iTunes Search API (SongLookup); off: no request. -->
+    <string name="song_lookup_title">Look up song details</string>
+    <string name="song_lookup_on">Year, genre and album from Apple\'s iTunes Search</string>
+    <string name="song_lookup_off">Off</string>
+
+    <!-- Wi-Fi priority (Launcher settings, WifiOrderActivity): the order between saved hotspots. -->
+    <string name="wifi_order_label">Wi-Fi priority</string>
+    <string name="wifi_order_state">Wi-Fi priority: %1$s</string>
+    <string name="wifi_order_off">Off</string>
+    <plurals name="wifi_order_networks">
+        <item quantity="one">%1$d network</item>
+        <item quantity="other">%1$d networks</item>
+    </plurals>
+    <string name="wifi_order_help">When a network higher in this list is in range, the TV switches to it on its own. A network you pick from the Wi-Fi menu is kept while the TV stays on it.</string>
+    <string name="wifi_order_section">Order</string>
+    <string name="wifi_order_empty">No order yet, so the TV stays on whichever saved network it joins.</string>
+    <string name="wifi_order_add_section">Add to order</string>
+    <!-- A network's place in the order and its name: "1. Home". -->
+    <string name="wifi_order_rank" translatable="false">%1$d. %2$s</string>
+    <string name="wifi_order_move_up">Move up</string>
+    <string name="wifi_order_move_down">Move down</string>
+    <string name="wifi_order_remove">Remove from order</string>
+    <string name="wifi_order_reading">Reading saved networks…</string>
+    <string name="wifi_order_no_saved">No saved networks yet. Join a hotspot once from the Wi-Fi menu.</string>
+    <string name="wifi_order_no_helper">Install the Wi-Fi helper to use this</string>
+    <string name="wifi_order_unreadable">The Wi-Fi helper couldn\'t list the saved networks. Try again in a moment.</string>
+    <string name="weather_turn_off">Turn weather off</string>
+
+    <!-- Player -->
+    <!-- The player's listener, as the notification access list names it. -->
+    <string name="media_listener_label">rehome player</string>
+    <string name="player_remove">Remove from player</string>
+    <string name="player_remove_hint">Hold OK to remove</string>
+    <string name="player_playing">Playing</string>
+    <string name="player_paused">Paused</string>
+    <string name="player_just_now">just now</string>
+    <string name="player_minutes_ago">%1$d min ago</string>
+    <string name="player_yesterday">yesterday</string>
+    <!-- %1$s is a time, "21:40". -->
+    <string name="player_today_at">today at %1$s</string>
+    <string name="player_yesterday_at">yesterday at %1$s</string>
+    <!-- %1$s is player_date_pattern's date, %2$s a time. -->
+    <string name="player_date_at">%1$s at %2$s</string>
+    <!-- A SimpleDateFormat pattern: "Nov 12". -->
+    <string name="player_date_pattern">MMM d</string>
+    <!-- An app that tells nothing of what it plays: "Back to Netflix". -->
+    <string name="player_back_to">Back to %1$s</string>
+    <string name="player_open">Open %1$s</string>
+    <string name="player_resume">Resume</string>
+    <string name="player_left_off">Left off at %1$s</string>
+    <string name="player_season_episode">Season %1$s, episode %2$s</string>
+    <string name="player_season">Season %1$s</string>
+    <string name="player_episode">Episode %1$s</string>
+    <!-- No-break spaces: never split over two lines. -->
+    <string name="player_minutes_left">%1$d\u00A0min\u00A0left</string>
+    <string name="player_for_minutes">for\u00A0%1$d\u00A0min</string>
+    <string name="player_track">Track\u00A0%1$d\u00A0of\u00A0%2$d</string>
+    <!-- Labels of the facts column. -->
+    <string name="player_album">Album</string>
+    <string name="player_year">Year</string>
+    <string name="player_genre">Genre</string>
+    <string name="player_played">Played</string>
+    <string name="player_watched">Watched</string>
+    <string name="player_channel">Channel</string>
+    <string name="player_length">Length</string>
+    <string name="player_stopped_at">Stopped at</string>
+    <plurals name="player_hours_ago">
+        <item quantity="one">%1$d hour ago</item>
+        <item quantity="other">%1$d hours ago</item>
+    </plurals>
+    <plurals name="player_days_ago">
+        <item quantity="one">%1$d day ago</item>
+        <item quantity="other">%1$d days ago</item>
+    </plurals>
+    <!-- The wind's compass, from north clockwise. -->
+    <string-array name="wind_points">
+        <item>N</item><item>NE</item><item>E</item><item>SE</item><item>S</item><item>SW</item><item>W</item><item>NW</item>
+    </string-array>
+</resources>

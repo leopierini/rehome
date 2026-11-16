@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A dropdown row (Inputs, Wi-Fi, the tile menu, the quick settings): focused in the tiles' language (FocusLook), a
+     glow sized for a row; the panel lets it spill into its padding. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <io.github.leopierini.rehome.FocusGlow app:glowCorner="13dp" app:glowSpread="6dp" app:glowColor="@color/focus_glow" />
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#26FFFFFF" />
+                    <stroke android:width="3dp" android:color="@color/focus_ring" />
+                    <corners android:radius="13dp" />
+                </shape>
+            </item>
+            <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <stroke android:width="2dp" android:color="@color/focus_ring_dark" />
+                    <corners android:radius="10dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000" />
+            <corners android:radius="13dp" />
+        </shape>
+    </item>
+</selector>

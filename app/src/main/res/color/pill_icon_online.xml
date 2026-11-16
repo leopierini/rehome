@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- wifi_status_color: the Wi-Fi pill's icon while online, green like status_dot, on the focused pill too (its glass is dark). -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dropdown open (pill_bg): the status colour on the open glass. -->
+    <item android:state_activated="true" android:state_window_focused="false" android:color="#FF34C759" />
+    <item android:state_focused="true" android:color="#FF34C759" />
+    <item android:color="#FF34C759" />
+</selector>

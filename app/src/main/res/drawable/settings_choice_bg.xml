@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher settings rows: focus in the tiles' language (FocusLook); the current choice keeps its green, also
+     while focused. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="true" android:state_selected="true">
+        <layer-list>
+            <item>
+                <io.github.leopierini.rehome.FocusGlow app:glowCorner="14dp" app:glowSpread="8dp" app:glowColor="@color/focus_glow" />
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#334DAE6D" />
+                    <stroke android:width="3dp" android:color="@color/focus_ring" />
+                    <corners android:radius="14dp" />
+                </shape>
+            </item>
+            <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <stroke android:width="2dp" android:color="@color/focus_ring_dark" />
+                    <corners android:radius="11dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <io.github.leopierini.rehome.FocusGlow app:glowCorner="14dp" app:glowSpread="8dp" app:glowColor="@color/focus_glow" />
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#FF2E3640" />
+                    <stroke android:width="3dp" android:color="@color/focus_ring" />
+                    <corners android:radius="14dp" />
+                </shape>
+            </item>
+            <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <stroke android:width="2dp" android:color="@color/focus_ring_dark" />
+                    <corners android:radius="11dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#334DAE6D" />
+            <corners android:radius="14dp" />
+            <stroke android:width="1dp" android:color="#FF4DAE6D" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FF242B34" />
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+</selector>

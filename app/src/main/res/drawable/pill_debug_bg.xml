@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The "Debugging on" pill (DebugPill): a warning, so red, but a dim red glass for the OLED panel, not a solid
+     block. Focused it keeps its red glass and takes the ring and glow of every pill (pill_bg). -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <io.github.leopierini.rehome.FocusGlow app:glowCorner="21dp" app:glowSpread="10dp" app:glowColor="@color/focus_glow" />
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient android:angle="270" android:startColor="#5CFF453A" android:endColor="#33FF453A" />
+                    <stroke android:width="3dp" android:color="@color/focus_ring" />
+                    <corners android:radius="21dp" />
+                </shape>
+            </item>
+            <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <stroke android:width="2dp" android:color="@color/focus_ring_dark" />
+                    <corners android:radius="18dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="270" android:startColor="#47FF453A" android:endColor="#24FF453A" />
+            <stroke android:width="1dp" android:color="#73FF6B61" />
+            <corners android:radius="21dp" />
+        </shape>
+    </item>
+</selector>

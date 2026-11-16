@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.application'
+}
+
+// The launcher's Wi-Fi hands: turns Wi-Fi on and joins a saved network without TvSettings' screens.
+// Android 10+ lets only apps that target API 28 or lower do either (WifiManager.setWifiEnabled, enableNetwork),
+// so this tiny app targets 28 while the launcher keeps targeting 34. No activity, no icon: the launcher sends it
+// ordered broadcasts (WifiCommand) guarded by a signature permission. Installed by tools/rehome.py.
+android {
+    namespace 'io.github.leopierini.rehome.wifi'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'io.github.leopierini.rehome.wifi'
+        minSdk 26
+        //noinspection ExpiredTargetSdkVersion: the point of this app (see above); not on the Play Store.
+        targetSdk 28
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    signingConfigs {
+        // The release key from the REHOME_* properties (see the root build.gradle); none set: the debug key.
+        def key = rootProject.releaseKey()
+        if (key != null) {
+            release {
+                storeFile key.storeFile
+                storePassword key.storePassword
+                keyAlias key.keyAlias
+                keyPassword key.keyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+            signingConfig signingConfigs.findByName('release') ?: signingConfigs.debug
+        }
+    }
+
+    lint {
+        // No activity on purpose: nothing to launch, nothing in the app list.
+        disable 'ExpiredTargetSdkVersion', 'OldTargetApi', 'MissingLeanbackLauncher', 'MissingApplicationIcon'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

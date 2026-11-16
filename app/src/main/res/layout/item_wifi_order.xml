@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One network on the Wi-Fi priority screen (WifiOrderActivity): "1. Home" in the order, or a saved one to add. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingsRow"
+    android:layout_marginTop="10dp"
+    android:ellipsize="end"
+    android:maxLines="1" />

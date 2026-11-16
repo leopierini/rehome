@@ -1,0 +1,52 @@
+# Cleanup list for Philips Android TV 11 sets on the PH1M_EA_9970A board (MediaTek MT5895, firmware TPM211*).
+# Known models on this board: 55/65OLED706, 55OLED707, 65OLED807, 65OLED907, 65PML9506, 50PUS8517 (not 55OLED708).
+# Tested on a 55OLED706; the other models share the same package set.
+#
+# Every entry is DISABLED with `pm disable-user --user 0`, never uninstalled. `tools/rehome.py restore`
+# enables them again. A package that is not installed on your set is skipped.
+#
+# Format: one package per line, `package  # reason`; `[group name]` starts a group; `#` lines are comments.
+# A reason may start with tags:
+#   needs-tvinput:  the package asks for the TV_INPUT_HARDWARE permission; the reason says why it is safe.
+#   after-home:     disabled only after rehome is the Home app (the installer does this in its own step).
+#
+# Never in this list (the installer refuses a list that has one): streaming apps, Assistant, DLNA, IP control,
+# Chromecast, firmware updaters, org.droidtv.eum, the Play Store and Play Services, the TV, tuner and HDMI
+# services, and com.google.android.tv.remote.service (the phone remote in the Google Home app).
+
+[TP Vision telemetry]
+org.droidtv.candeebug                     # "DAC" analytics uploader: channels watched, viewing times, connected devices and Ambilight settings, sent to the maker's cloud
+org.droidtv.gel                           # needs-tvinput: metrics collector that runs inside candeebug's process. It asks for the TV-input permission but provides no TV input, so Live TV and HDMI keep working without it
+org.droidtv.usagelogger                   # needs-tvinput: boot stats, remote key counts and panel telemetry for the uploader above. It asks for the TV-input permission but provides no TV input; Live TV and HDMI worked after disabling it
+
+[Philips promo and store]
+org.droidtv.nettvrecommender              # "Top Picks" promotion row; disabled before its backend below
+org.droidtv.recommendation                # headless backend of the "Top Picks" row
+org.droidtv.nettv.market                  # "Smart TV Collection" app storefront
+org.droidtv.nettvapp1814                  # preloaded web-app shortcut (ARTE)
+org.droidtv.nettvapp4932                  # preloaded web-app shortcut (Free Games by PlayWorks)
+org.droidtv.nettvapp5512                  # preloaded web-app shortcut (Fishing TV)
+org.droidtv.nettvapp20004410              # preloaded web-app shortcut (Couchplay Games)
+org.droidtv.android.fitness               # Fitness Buddy, preloaded
+
+[Demo, Alexa and TalkBack]
+org.droidtv.demome                        # "Demo me" retail demo mode and shop loop
+org.droidtv.m7opapp                       # M7 satellite operator promo (Canal Digitaal, TV Vlaanderen, Skylink, HD Austria); keep it if you use one of those
+org.droidtv.amazonalexa                   # Alexa bridge; channel changes and the TV guide still work without it
+com.google.android.marvin.talkback        # TalkBack screen reader; keep it if anyone in the house needs it
+
+[Google extras]
+com.google.android.feedback               # Market Feedback Agent
+com.google.android.partnersetup           # partner referrer and attribution
+com.google.android.onetimeinitializer     # runs once at first setup, nothing afterwards
+com.google.android.sss.authbridge         # set-up-from-your-phone helper, used only during first setup
+com.google.android.syncadapters.calendar  # Google Calendar sync; there is no calendar app on the TV
+
+[Play-Fi and Mimi]
+com.phorus.playfi.tv                      # DTS Play-Fi multi-room audio app; it can enable itself again at boot, `tools/rehome.py check --fix` disables it again
+com.phorus.playfi.softap                  # Play-Fi's soft access point helper for speaker setup
+io.mimi.tvapp                             # Mimi hearing-test app (its sound service stays); it can enable itself again at boot like Play-Fi
+
+[Google TV launcher and recommendations]
+com.google.android.tvlauncher             # after-home: the stock home screen, about 190 MB resident; disabled only once rehome is Home
+com.google.android.tvrecommendations      # after-home: "Android TV Core Services": the stock home's recommendation rows and the system notification panel; a job every ~30 s blocked the system for 2 s. Disabled after the stock launcher, which holds a reference to it

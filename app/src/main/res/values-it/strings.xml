@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="inputs">Ingressi</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="settings">Impostazioni</string>
+    <string name="connected">Collegato</string>
+    <string name="not_connected">Nessun dispositivo</string>
+    <string name="live_tv">TV in diretta</string>
+    <string name="no_inputs">Nessun ingresso trovato</string>
+    <string name="more_inputs">Altri ingressi</string>
+    <string name="good_morning">Buongiorno</string>
+    <string name="good_afternoon">Buon pomeriggio</string>
+    <string name="good_evening">Buonasera</string>
+    <string name="good_night">Buonanotte</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="not_available">Non disponibile su questa TV</string>
+    <string name="cant_open">Impossibile aprire %1$s</string>
+    <string name="date_format">EEEE d MMMM</string>
+    <string name="stats_cpu">CPU %1$d%%</string>
+    <string name="stats_memory">Memoria: %1$d / %2$d MB</string>
+    <string name="stats_storage">Spazio: %1$s liberi</string>
+    <string name="storage_gb_whole">%1$.0f GB</string>
+    <string name="storage_gb_decimal">%1$.1f GB</string>
+    <string name="dream_name">Orologio</string>
+    <string name="vpn">VPN</string>
+    <string name="vpn_off">VPN disattivata</string>
+    <string name="home_settings">Scegli la home predefinita</string>
+    <string name="home_settings_help">Seleziona la home originale per smettere di usare rehome come Home, oppure rehome per tornare indietro. Il launcher originale deve essere attivo e la TV deve offrire la scelta della home; se era disattivato, usa prima lo script di ripristino.</string>
+    <string name="launcher_settings">Impostazioni del launcher</string>
+    <string name="native_settings">Impostazioni del produttore</string>
+    <string name="wallpaper_label">Sfondo</string>
+    <string name="wallpaper_state">Sfondo: %1$s</string>
+    <string name="wallpaper_none">Nessuno</string>
+    <string name="wallpaper_applied">Sfondo cambiato</string>
+    <string name="wallpaper_theme_default">Predefinito del tema</string>
+    <string name="animations_state">Animazioni: %1$s</string>
+    <string name="advanced_effects">Effetti avanzati</string>
+    <string name="advanced_effects_state">Effetti avanzati: %1$s</string>
+    <string name="open_on_start_label">Apri all\'avvio</string>
+    <string name="open_on_start_state">Apri all\'avvio: %1$s</string>
+    <string name="advanced_effects_warning">Aggiunge riquadro sollevato, zoom dell\'icona e transizioni di colore fluide. Può aumentare l\'uso di memoria; la differenza dipende dalla TV.</string>
+    <string name="follow_theme">Segui il tema (azzera le scelte fatte sulla TV)</string>
+    <string name="follow_theme_hint">Usa il tema corrente o le impostazioni predefinite di layout e animazioni. Applicare o reimpostare un tema cancella anche le scelte fatte sulla TV.</string>
+    <string name="tv_settings">Impostazioni di sistema della TV</string>
+    <string name="quick_picture">Schermo</string>
+    <string name="quick_network">Rete</string>
+    <string name="quick_apps">App</string>
+    <string name="quick_apps_hint">Riattiva</string>
+    <string name="on">Sì</string>
+    <string name="off">No</string>
+    <string name="enable">Attiva</string>
+    <string name="input_key_service_description">Apre il selettore degli ingressi quando si preme il tasto Input del telecomando.</string>
+    <string name="home_key_name">Tasto Home</string>
+    <string name="home_key_description">Fa aprire questo launcher dal tasto Home del telecomando.</string>
+    <string name="power_menu">Riavvia…</string>
+    <string name="greeting_with_name">%1$s, %2$s</string>
+    <string name="clock_format_system">Sistema</string>
+    <string name="clock_format_12">12 ore</string>
+    <string name="clock_format_24">24 ore</string>
+    <string name="weather_credit">Meteo: Open-Meteo.com (CC BY 4.0)</string>
+
+    <!-- Top bar -->
+    <string name="debug_pill">Debug attivo</string>
+    <string name="network_none">Nessuna rete</string>
+    <string name="offline_hint">Offline: controlla il Wi-Fi o l\'hotspot</string>
+
+    <!-- Wi-Fi dropdown -->
+    <string name="wifi_connected">Connessa</string>
+    <string name="wifi_connecting">Connessione…</string>
+    <string name="wifi_saved">Salvata</string>
+    <string name="wifi_searching">Ricerca reti…</string>
+    <string name="wifi_off">Wi-Fi disattivato</string>
+    <string name="wifi_turn_on">Attiva</string>
+    <string name="wifi_turning_on">Attivazione Wi-Fi…</string>
+    <string name="wifi_more">Altre impostazioni Wi-Fi</string>
+    <string name="wifi_no_list">Elenco reti non disponibile</string>
+    <string name="wifi_open_settings">Apri impostazioni</string>
+    <string name="wifi_cant_connect">Impossibile collegarsi a %1$s</string>
+    <string name="wifi_password_refused">Password di %1$s non accettata</string>
+
+    <!-- Data counter (last row of the Wi-Fi dropdown and its detail) -->
+    <string name="data_today">Oggi %1$s</string>
+    <string name="data_since_boot">Dall\'ultimo riavvio %1$s</string>
+    <string name="data_today_label">Oggi</string>
+    <string name="data_month_label">Questo mese</string>
+    <string name="data_top_apps">App più usate oggi</string>
+    <string name="data_by_network">Per rete: oggi · mese (stima)</string>
+    <string name="data_naming">Un momento…</string>
+    <string name="data_system">Sistema Android</string>
+    <string name="data_removed">App rimosse</string>
+    <string name="data_adb">Debug ADB</string>
+    <string name="data_other">Altri servizi</string>
+    <string name="data_unattributed">Non attribuiti</string>
+    <string name="data_other_networks">Altre reti</string>
+
+    <!-- Weather -->
+    <string name="weather_name">Meteo</string>
+    <string name="weather_clear">Sereno</string>
+    <string name="weather_mostly_clear">Poco nuvoloso</string>
+    <string name="weather_partly_cloudy">Parzialmente nuvoloso</string>
+    <string name="weather_overcast">Coperto</string>
+    <string name="weather_fog">Nebbia</string>
+    <string name="weather_drizzle">Pioviggine</string>
+    <string name="weather_rain">Pioggia</string>
+    <string name="weather_showers">Rovesci</string>
+    <string name="weather_snow">Neve</string>
+    <string name="weather_thunderstorm">Temporale</string>
+    <string name="rain_from">%1$s dalle %2$d</string>
+    <string name="rain_from_one">%1$s dall\'1</string>
+    <string name="rain_from_midnight">%1$s da mezzanotte</string>
+    <string name="rain_until">%1$s fino alle %2$d</string>
+    <string name="rain_until_one">%1$s fino all\'1</string>
+    <string name="rain_until_midnight">%1$s fino a mezzanotte</string>
+    <string name="wind">Vento %1$d km/h</string>
+    <string name="wind_from">Vento %1$d km/h %2$s</string>
+
+    <!-- Rows -->
+    <string name="row_media">Media</string>
+    <string name="row_music">Musica</string>
+    <string name="row_games">Giochi</string>
+    <string name="row_tools">Strumenti</string>
+    <string name="row_other">Altre app</string>
+    <string name="tile_move_left">Sposta a sinistra</string>
+    <string name="tile_move_right">Sposta a destra</string>
+    <string name="tile_move_row">Sposta in un\'altra riga</string>
+    <string name="tile_hide">Nascondi</string>
+    <string name="tile_info">Info app</string>
+    <string name="rows_reset">Ripristina ordine delle righe</string>
+    <string name="rows_reset_message">Le righe tornano come all\'inizio e le app nascoste ricompaiono.</string>
+    <string name="rows_reset_confirm">Ripristina</string>
+    <string name="rows_unhide">Mostra app nascoste</string>
+    <string name="rows_none_hidden">Nessuna app nascosta</string>
+    <string name="rows_unhidden">App nascoste di nuovo in Home</string>
+    <string name="rows_save_failed">Non riesco a salvare</string>
+
+    <!-- Player -->
+    <string name="media_listener_label">Lettore di rehome</string>
+    <string name="player_remove">Togli dal lettore</string>
+    <string name="player_remove_hint">Tieni premuto OK: togli</string>
+    <string name="player_playing">In riproduzione</string>
+    <string name="player_paused">In pausa</string>
+    <string name="player_just_now">adesso</string>
+    <string name="player_minutes_ago">%1$d min fa</string>
+    <string name="player_yesterday">ieri</string>
+    <string name="player_today_at">oggi alle %1$s</string>
+    <string name="player_yesterday_at">ieri alle %1$s</string>
+    <string name="player_date_at">%1$s alle %2$s</string>
+    <string name="player_date_pattern">dd/MM</string>
+    <string name="player_back_to">Torna su %1$s</string>
+    <string name="player_open">Apri %1$s</string>
+    <string name="player_resume">Riprendi</string>
+    <string name="player_left_off">Eri a %1$s</string>
+    <string name="player_season_episode">Stagione %1$s, episodio %2$s</string>
+    <string name="player_season">Stagione %1$s</string>
+    <string name="player_episode">Episodio %1$s</string>
+    <string name="player_minutes_left">mancano\u00A0%1$d\u00A0min</string>
+    <string name="player_for_minutes">per\u00A0%1$d\u00A0min</string>
+    <string name="player_track">Brano\u00A0%1$d\u00A0di\u00A0%2$d</string>
+    <string name="player_album">Album</string>
+    <string name="player_year">Anno</string>
+    <string name="player_genre">Genere</string>
+    <string name="player_played">Ascoltato</string>
+    <string name="player_watched">Guardato</string>
+    <string name="player_channel">Canale</string>
+    <string name="player_length">Durata</string>
+    <string name="player_stopped_at">Fermo a</string>
+    <plurals name="player_hours_ago">
+        <item quantity="one">%1$d ora fa</item>
+        <item quantity="many">%1$d ore fa</item>
+        <item quantity="other">%1$d ore fa</item>
+    </plurals>
+    <plurals name="player_days_ago">
+        <item quantity="one">%1$d giorno fa</item>
+        <item quantity="many">%1$d giorni fa</item>
+        <item quantity="other">%1$d giorni fa</item>
+    </plurals>
+    <string-array name="wind_points">
+        <item>N</item><item>NE</item><item>E</item><item>SE</item><item>S</item><item>SO</item><item>O</item><item>NO</item>
+    </string-array>
+    <!-- Città del meteo -->
+    <string name="weather_city_label">Città del meteo</string>
+    <string name="weather_city_state">Città del meteo: %1$s</string>
+    <string name="weather_city_not_set">Non impostata</string>
+    <string name="weather_city_off">Nessuna (meteo spento)</string>
+    <string name="weather_city_now">Ora: %1$s</string>
+    <string name="weather_set_city">Imposta la tua città</string>
+    <string name="city_search_hint">Scrivi il nome di una città</string>
+    <string name="city_searching">Ricerca…</string>
+    <string name="city_no_results">Nessun risultato</string>
+    <string name="city_no_connection">Nessuna connessione</string>
+
+    <!-- Impostazioni del launcher: i dettagli dei brani dalla ricerca di iTunes (SongLookup). -->
+    <string name="song_lookup_title">Cerca i dettagli dei brani</string>
+    <string name="song_lookup_on">Anno, genere e album dalla ricerca di iTunes di Apple</string>
+    <string name="song_lookup_off">No</string>
+
+    <!-- Priorità Wi-Fi (Impostazioni del launcher, WifiOrderActivity). -->
+    <string name="wifi_order_label">Priorità Wi-Fi</string>
+    <string name="wifi_order_state">Priorità Wi-Fi: %1$s</string>
+    <string name="wifi_order_off">disattivata</string>
+    <plurals name="wifi_order_networks">
+        <item quantity="one">%1$d rete</item>
+        <item quantity="many">%1$d reti</item>
+        <item quantity="other">%1$d reti</item>
+    </plurals>
+    <string name="wifi_order_help">Quando è in portata una rete più in alto in questo elenco, la TV ci passa da sola. Una rete scelta dal menu Wi-Fi resta finché la TV è collegata a quella.</string>
+    <string name="wifi_order_section">Ordine</string>
+    <string name="wifi_order_empty">Nessun ordine: la TV resta sulla rete salvata a cui si collega.</string>
+    <string name="wifi_order_add_section">Aggiungi all\'ordine</string>
+    <string name="wifi_order_move_up">Sposta su</string>
+    <string name="wifi_order_move_down">Sposta giù</string>
+    <string name="wifi_order_remove">Togli dall\'ordine</string>
+    <string name="wifi_order_reading">Lettura delle reti salvate…</string>
+    <string name="wifi_order_no_saved">Ancora nessuna rete salvata. Collegati una volta a un hotspot dal menu Wi-Fi.</string>
+    <string name="wifi_order_no_helper">Installa l\'app di supporto Wi-Fi per usare questa funzione</string>
+    <string name="wifi_order_unreadable">L\'app di supporto Wi-Fi non è riuscita a leggere le reti salvate. Riprova tra poco.</string>
+    <string name="weather_turn_off">Spegni il meteo</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The launcher looks up no resource by name (no getIdentifier), so strict shrinking is safe; safe mode would also
+     keep every resource whose name matches a string literal anywhere in the code (AndroidX translations among them). -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:shrinkMode="strict" />

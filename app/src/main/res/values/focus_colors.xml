@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The one focus language (FocusLook): the ring, the dark line inside it, and the glow at the element's edge. -->
+    <color name="focus_ring">#FFFFFFFF</color>
+    <color name="focus_ring_dark">#FF0B0D10</color>
+    <color name="focus_glow">#47FFFFFF</color>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FocusGlow (the light around a focused element), for use from drawable XML. -->
+    <declare-styleable name="FocusGlow">
+        <!-- The element's corner radius: the halo follows it. -->
+        <attr name="glowCorner" format="dimension" />
+        <!-- How far past the element the halo reaches. -->
+        <attr name="glowSpread" format="dimension" />
+        <!-- Its colour at the element's edge, alpha included. -->
+        <attr name="glowColor" format="color" />
+    </declare-styleable>
+</resources>

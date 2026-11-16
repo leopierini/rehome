@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Only apps signed with the same key (the launcher) may send the commands. Declared in the launcher too, so
+         the order the two are installed in does not matter. -->
+    <permission
+        android:name="io.github.leopierini.rehome.permission.WIFI_COMMAND"
+        android:protectionLevel="signature" />
+
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- getConfiguredNetworks (the saved networks): for an app targeting 28 the framework checks COARSE (and its
+         app-op), not FINE. Both granted by tools/rehome.py with pm grant. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:label="rehome Wi-Fi helper">
+        <receiver
+            android:name=".WifiCommand"
+            android:exported="true"
+            android:permission="io.github.leopierini.rehome.permission.WIFI_COMMAND">
+            <intent-filter>
+                <action android:name="io.github.leopierini.rehome.wifi.ENABLE" />
+                <action android:name="io.github.leopierini.rehome.wifi.CONNECT" />
+                <action android:name="io.github.leopierini.rehome.wifi.SAVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

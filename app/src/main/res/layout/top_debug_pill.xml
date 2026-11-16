@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The "Debugging on" pill (DebugPill), added to the top bar in code while ADB is on. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnDebug"
+    style="@style/TopButton"
+    android:visibility="gone"
+    android:singleLine="true"
+    android:text="@string/debug_pill"
+    android:background="@drawable/pill_debug_bg"
+    android:textColor="@color/pill_debug_text"
+    android:drawableTint="@color/pill_debug_text"
+    android:drawableStart="@drawable/ic_debug"
+    android:nextFocusDown="@+id/grid"
+    tools:ignore="HardcodedText" />

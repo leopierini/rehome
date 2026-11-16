@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}
+
+// The release key, kept outside the repo: REHOME_STORE_FILE, REHOME_STORE_PASSWORD, REHOME_KEY_ALIAS and
+// REHOME_KEY_PASSWORD, as Gradle properties (~/.gradle/gradle.properties, -P) or environment variables.
+// None of them set (anyone building from source): null, and the release build is signed with the debug key.
+// Some set but not all, or a store file that isn't there: the build stops, so a release never goes out signed
+// with the debug key by mistake.
+ext.releaseKey = { ->
+    def names = ['REHOME_STORE_FILE', 'REHOME_STORE_PASSWORD', 'REHOME_KEY_ALIAS', 'REHOME_KEY_PASSWORD']
+    def values = names.collectEntries { name ->
+        [(name): providers.gradleProperty(name).orElse(providers.environmentVariable(name)).getOrElse('')]
+    }
+    def missing = names.findAll { values[it] == '' }
+    if (missing.size() == names.size()) return null
+    if (!missing.isEmpty()) {
+        throw new GradleException("Release signing is half configured: " + missing.join(', ') + " not set. "
+                + "Set all four REHOME_* properties, or none to sign with the debug key.")
+    }
+    def store = file(values.REHOME_STORE_FILE)
+    if (!store.isFile()) {
+        throw new GradleException("Release signing: REHOME_STORE_FILE points to " + store + ", which does not exist. "
+                + "Fix the path, or unset all four REHOME_* properties to sign with the debug key.")
+    }
+    return [storeFile: store, storePassword: values.REHOME_STORE_PASSWORD,
+            keyAlias: values.REHOME_KEY_ALIAS, keyPassword: values.REHOME_KEY_PASSWORD]
+}

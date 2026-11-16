@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Languages the launcher is in: English, and Italian as the only translation. Lets Android 13+ give the launcher
+     its own language (Settings, or over ADB "cmd locale set-app-locales io.github.leopierini.rehome" with the
+     locales option), since TVs rarely offer every language system-wide. -->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="en" />
+    <locale android:name="it" />
+</locale-config>
