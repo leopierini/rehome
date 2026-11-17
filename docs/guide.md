@@ -186,7 +186,7 @@ default the row starts from.
 ## Wi-Fi, hotspots and the data counter
 
 <p align="center">
-  <img src="media/wifi-dropdown.png" alt="The Wi-Fi dropdown open under the Wi-Fi pill, with more networks than fit on screen: the list is scrolled to its end, so the first rows have slid up under the top edge, and five nearby networks show signal bars, four of them a lock; below a divider, More Wi-Fi settings, and at the bottom the focused data row, Today 752 MB" width="800">
+  <img src="media/wifi-dropdown.png" alt="The Wi-Fi dropdown open under the Wi-Fi pill: the connected network at the top with a green dot and Connected, focused, then five nearby networks with signal bars, four of them a lock; below a divider, More Wi-Fi settings, and at the bottom the data row, Today 31 MB" width="800">
 </p>
 
 <p align="center"><sub>Network names blurred.</sub></p>

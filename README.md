@@ -71,7 +71,7 @@ is rejected. The pill's icon is green when the internet works, orange while it i
 network.
 
 <p align="center">
-  <img src="docs/media/wifi-dropdown.png" alt="The Wi-Fi dropdown open under the Wi-Fi pill, with more networks than fit on screen: the list is scrolled to its end, so the first rows have slid up under the top edge, and five nearby networks show signal bars, four of them a lock; below a divider, More Wi-Fi settings, and at the bottom the focused data row, Today 752 MB. Network names are blurred" width="800">
+  <img src="docs/media/wifi-dropdown.png" alt="The Wi-Fi dropdown open under the Wi-Fi pill: the connected network at the top with a green dot and Connected, focused, then five nearby networks with signal bars, four of them a lock; below a divider, More Wi-Fi settings, and at the bottom the data row, Today 31 MB. Network names are blurred" width="800">
 </p>
 
 Turning Wi-Fi on and joining a saved network take a small helper app, because Android 11 allows that only to apps
